@@ -50,7 +50,7 @@ namespace Test.Entities
             if(type == ParkingSpaceType.VAN)
             {
                 _parkingSpaceCalculateContext.SetStrategy(new VanParkingSpaceCalculateStrategy());
-                return _parkingSpaceCalculateContext.FilledParkingSpaceCalculate(AvailableQuantity);
+                return _parkingSpaceCalculateContext.FreeParkingSpaceCalculate(AvailableQuantity);
             }
 
             throw new ParkingSpaceTypeNotFoundException("Parking Space Type Not Found.");

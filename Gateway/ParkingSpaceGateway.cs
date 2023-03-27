@@ -10,7 +10,7 @@ namespace Test.Gateway
             var availableQuantity = new List<ParkingSpace>(10);
             
             availableQuantity.Add(CarParkingSpace.Create(ParkingSpaceStatus.FILLED));
-            availableQuantity.Add(CarParkingSpace.Create());
+            availableQuantity.Add(CarParkingSpace.Create(ParkingSpaceStatus.FILLED));
             availableQuantity.Add(CarParkingSpace.Create());
             availableQuantity.Add(CarParkingSpace.Create());
 

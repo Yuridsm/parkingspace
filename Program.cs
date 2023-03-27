@@ -13,7 +13,7 @@ namespace Test
 
             var park = new Park(gateway);
 
-            Console.WriteLine($"There are {park.AvailableParkingSpace(ParkingSpaceType.MOTORCYCLE)} parking space to {nameof(ParkingSpaceType.MOTORCYCLE)}\n");
+            Console.WriteLine($"There are {park.AvailableParkingSpace(ParkingSpaceType.VAN)} parking space to {nameof(ParkingSpaceType.VAN)}\n");
 
             foreach(var item in park.AvailableQuantity)
                 Console.WriteLine($"{item.Identifier} - {item.Type} - {item.Status}");
