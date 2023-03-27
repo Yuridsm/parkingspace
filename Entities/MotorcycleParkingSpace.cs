@@ -4,12 +4,12 @@ namespace Test.Entities
 {
     public class MotorcycleParkingSpace : ParkingSpace
     {
-        public static MotorcycleParkingSpace Create()
+        public static MotorcycleParkingSpace Create(ParkingSpaceStatus status = ParkingSpaceStatus.FREE)
         {
             var motorcycle = new MotorcycleParkingSpace();
             
             motorcycle.Type = ParkingSpaceType.MOTORCYCLE;
-            motorcycle.Status = ParkingSpaceStatus.FREE;
+            motorcycle.Status = status;
 
             return motorcycle;
         }

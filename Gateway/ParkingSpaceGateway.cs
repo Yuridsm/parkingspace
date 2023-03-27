@@ -14,7 +14,7 @@ namespace Test.Gateway
             availableQuantity.Add(CarParkingSpace.Create());
             availableQuantity.Add(CarParkingSpace.Create());
 
-            availableQuantity.Add(MotorcycleParkingSpace.Create());
+            availableQuantity.Add(MotorcycleParkingSpace.Create(ParkingSpaceStatus.FILLED));
             availableQuantity.Add(MotorcycleParkingSpace.Create());
             availableQuantity.Add(MotorcycleParkingSpace.Create());
 
