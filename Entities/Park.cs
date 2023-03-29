@@ -11,7 +11,7 @@ namespace Test.Entities
         private List<ParkingSpace> _availableQuantity = new();
         private ParkingSpaceCalculateContext _parkingSpaceCalculateContext;
 
-        public Guid Identifier { get; set; }
+        public Guid Identifier { get; private set; } = Guid.NewGuid();
 
         public List<ParkingSpace> AvailableQuantity 
         { 
